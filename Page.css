@@ -1,0 +1,88 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+.container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    text-align: center;
+    height: 500px;
+}
+.col-6{
+  width: calc(100% * 6 /12);
+}
+.col-12{
+  width: 100%;
+}
+.col-3{
+  width: calc(100% * 4/ 12);
+  border: 1px solid black;
+}
+.col-12>.col-3{
+  height: 30px;
+  margin-top: auto;
+}
+.col-12>img{
+  width: 100%;
+  height: 300px;
+ 
+}
+.col-12>p{
+  font-size: 20px;
+  margin: 0px 30px;
+  color:blue
+}
+input[type=submit]{
+  width: 100%;
+  height: 100%;
+}
+input:hover{
+  background-color: rgb(134, 10, 10);
+}
+.Timenews{
+
+  border:1px solid black;
+  background-color: blue;
+}
+.i{
+  background-color: rgba(255, 255, 255, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+.newImage1>img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-top: 10px ;
+  margin-left: 10px;
+}
+.newImage2>img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-top: 10px ;
+  margin-left: 520px;
+}
+.newImage3>img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-top: 10px ;
+  margin-left: 1040px;
+}
+
